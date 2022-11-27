@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Undertale';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/Undertale.ttf") format('woff2');
+}
+
+.Pokecard {
+  margin-top: 32px;
+  margin-left: 32px;
+  display: grid;
+  grid-template-rows: 256px auto;
+  row-gap: 16px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 128px;
+  min-width: 768px;
+  letter-spacing: 0.08rem;
+}
+
+.Pokecard__header {
+  display: grid;
+  grid-template-columns: 256px auto;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.Pokecard__photo {
+  max-width: 100%;
+}
+
+.Property__name {
+  font-family: "Undertale", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 16px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-width: 42px;
+  padding: 12px;
+  text-align: center;
+  color: orange;
+}
+
+.Property__value {
+  max-width: 128px;
+  align-self: center;
+  padding-left: 8px;
+}
+
+.Pokecard__description {
+  display: grid;
+  row-gap: 8px;
+}
+
+.Description__element {
+  display: grid;
+  grid-template-columns: 128px auto;
+  align-items: stretch;
+  justify-items: stretch;
+  border: solid orange;
+  border-radius: 24px;
+}
+
+.Move__description {
+  max-width: 512px;
+  align-self: center;
+  padding: 16px;
+}
+
+.Moves {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 12px;
+}
+
+.Pokecard__footer {
+  padding-bottom: 24px;
+}
+
+.Moves__move {
+  display: grid;
+  grid-template-columns: 128px 5fr;
+  align-items: stretch;
+  justify-items: stretch;
+  border: solid orange;
+  border-radius: 24px;
+}
+
+.Move__name {
+  font-family: "Undertale", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: orange;
+  border-radius: 16px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  min-width: 42px;
+  padding: 12px;
+  text-align: center;
+  color: white;
+}
+
+.Pokecard {
+  font-family: "Undertale", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
