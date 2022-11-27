@@ -12,7 +12,7 @@ export const App = () => {
     return (
         <Pokecard photo={Logo}
                      ability={ability}
-                     gender={"male"}
+                     gender={"female"}
                      moves={moves}
                      name={"Пикачу"}
                      power={150}

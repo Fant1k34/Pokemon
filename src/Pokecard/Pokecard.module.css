@@ -109,3 +109,19 @@
   font-weight: 400;
   font-size: 16px;
 }
+
+.Moves__move_female {
+  border: solid deeppink;
+}
+
+.Move__name_female {
+  background-color: deeppink;
+}
+
+.Description__element_female {
+  border: solid deeppink;
+}
+
+.Property__name_female {
+  color: deeppink;
+}

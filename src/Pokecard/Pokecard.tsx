@@ -38,14 +38,16 @@ const Pokecard = ({ name, gender, photo, power, ability, moves, view }: props) =
     }
   ];
 
+  const isFemale = gender === "female";
+
   return (
     <div className={styles.Pokecard}>
       <header className={styles.Pokecard__header}>
         <img src={photo} alt="Photo" className={styles.Pokecard__photo}/>
         <div className={cn(styles.Pokecard__description, styles.Description)}>
           { info.map((element) => (
-              <span className={cn(styles.Description__element, styles.Property)}>
-                <span className={styles.Property__name}>{ element.prop }</span>
+              <span className={cn(styles.Description__element, isFemale && styles.Description__element_female,styles.Property)}>
+                <span className={cn(styles.Property__name, isFemale && styles.Property__name_female)}>{ element.prop }</span>
                 <span className={styles.Property__value}>{ element.value }</span>
               </span>
             )
@@ -56,8 +58,8 @@ const Pokecard = ({ name, gender, photo, power, ability, moves, view }: props) =
         <section className={cn(styles.Pokecard__footer, styles.Moves)}>
           { moves.map((element) => {
             return (
-              <span className={cn(styles.Moves__move, styles.Move)}>
-                <div className={styles.Move__name}>
+              <span className={cn(styles.Moves__move, isFemale && styles.Moves__move_female, styles.Move)}>
+                <div className={cn(styles.Move__name, isFemale && styles.Move__name_female)}>
                   { element.name }
                 </div>
                 <span className={styles.Move__description}>{ element.description }</span>
