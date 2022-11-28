@@ -40,8 +40,6 @@ const Pokecard = ({ name, gender, photo, power, ability, moves, view }: props) =
     }
   ];
 
-  const isFemale = gender === "female";
-
   return (
     <div className={styles.Pokecard}>
       <header className={styles.Pokecard__header}>
