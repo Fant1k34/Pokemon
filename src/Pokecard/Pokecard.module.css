@@ -125,3 +125,11 @@
 .Property__name_female {
   color: deeppink;
 }
+
+.Snow {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

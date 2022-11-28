@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './Pokecard.module.css';
 import { cn } from "../api/common";
 import { SecondaryPanel } from "../SecondaryPanel/SecondaryPanel";
-import { MainPanel}  from "../MainPanel/MainPanel";
+import { MainPanel }  from "../MainPanel/MainPanel";
+import { init } from "./Snow";
 
 type props = {
   name: string;
@@ -40,6 +41,8 @@ const Pokecard = ({ name, gender, photo, power, ability, moves, view }: props) =
     }
   ];
 
+  if (view === "christmas") setTimeout(() => init(), 500)
+
   return (
     <div className={styles.Pokecard}>
       <header className={styles.Pokecard__header}>
@@ -63,6 +66,7 @@ const Pokecard = ({ name, gender, photo, power, ability, moves, view }: props) =
           )) }
         </section>
       </main>
+      { view == "christmas" && <canvas className={styles.Snow}></canvas> }
     </div>
   );
 }
