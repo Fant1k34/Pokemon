@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Pokecard.module.css';
 import { cn } from "../api/common";
-import {SecondaryPanel} from "../SecondaryPanel/SecondaryPanel";
-import {MainPanel} from "../MainPanel/MainPanel";
+import { SecondaryPanel } from "../SecondaryPanel/SecondaryPanel";
+import { MainPanel}  from "../MainPanel/MainPanel";
 
 type props = {
   name: string;
