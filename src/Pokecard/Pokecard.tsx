@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './Pokecard.module.css';
 import { cn } from "../api/common";
+import {SecondaryPanel} from "../SecondaryPanel/SecondaryPanel";
+import {MainPanel} from "../MainPanel/MainPanel";
 
 type props = {
   name: string;
-  gender: "male" | "female" | "other";
+  gender: "male" | "female";
   photo: string;
   power: number;
   ability: {
@@ -44,28 +46,23 @@ const Pokecard = ({ name, gender, photo, power, ability, moves, view }: props) =
     <div className={styles.Pokecard}>
       <header className={styles.Pokecard__header}>
         <img src={photo} alt="Photo" className={styles.Pokecard__photo}/>
-        <div className={cn(styles.Pokecard__description, styles.Description)}>
+        <div className={cn(styles.Pokecard__description, styles.Property)}>
           { info.map((element) => (
-              <span className={cn(styles.Description__element, isFemale && styles.Description__element_female,styles.Property)}>
-                <span className={cn(styles.Property__name, isFemale && styles.Property__name_female)}>{ element.prop }</span>
-                <span className={styles.Property__value}>{ element.value }</span>
-              </span>
+              <SecondaryPanel main={element.prop}
+                              secondary={String(element.value)}
+                              gender={gender}/>
             )
           )}
         </div>
       </header>
       <main>
         <section className={cn(styles.Pokecard__footer, styles.Moves)}>
-          { moves.map((element) => {
-            return (
-              <span className={cn(styles.Moves__move, isFemale && styles.Moves__move_female, styles.Move)}>
-                <div className={cn(styles.Move__name, isFemale && styles.Move__name_female)}>
-                  { element.name }
-                </div>
-                <span className={styles.Move__description}>{ element.description }</span>
-              </span>
-            );
-          }) }
+          { moves.map((element) => (
+              <MainPanel main={element.name}
+                         secondary={String(element.description)}
+                         gender={gender}
+              />
+          )) }
         </section>
       </main>
     </div>

@@ -55,7 +55,7 @@
   row-gap: 8px;
 }
 
-.Description__element {
+.Property__element {
   display: grid;
   grid-template-columns: 128px auto;
   align-items: stretch;
@@ -118,7 +118,7 @@
   background-color: deeppink;
 }
 
-.Description__element_female {
+.Property__element_female {
   border: solid deeppink;
 }
 

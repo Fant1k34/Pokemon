@@ -1,0 +1,38 @@
+.Property {
+    display: grid;
+    grid-template-columns: 128px 5fr;
+    align-items: stretch;
+    justify-items: stretch;
+    border: solid orange;
+    border-radius: 24px;
+}
+
+.Property_female {
+    border: solid deeppink;
+}
+
+.Property__name {
+    font-family: "Undertale", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 16px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-width: 42px;
+    padding: 12px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+}
+
+.Property__name_female {
+    background-color: deeppink;
+}
+
+.Property__value {
+    max-width: 512px;
+    align-self: center;
+    padding: 16px;
+}
+
