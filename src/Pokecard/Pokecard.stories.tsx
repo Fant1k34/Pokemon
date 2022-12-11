@@ -21,11 +21,3 @@ export const Component = () => <Pokecard photo={Logo}
                                          name={"Пикачу"}
                                          power={150}
                                          view={"usual"}/>;
-
-export const Christmas = () => <Pokecard photo={Logo}
-                                         ability={ability}
-                                         gender={"female"}
-                                         moves={moves}
-                                         name={"Пикачу"}
-                                         power={150}
-                                         view={"christmas"}/>;
