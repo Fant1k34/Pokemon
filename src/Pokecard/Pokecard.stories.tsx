@@ -14,7 +14,7 @@ const ability = {
   description: 'Парализует противника'
 }
 
-export const Component = () => <Pokecard photo={Logo}
+export const Component: React.FC = () => <Pokecard photo={Logo}
                                          ability={ability}
                                          gender={'female'}
                                          moves={moves}

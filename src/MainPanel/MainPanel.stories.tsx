@@ -7,4 +7,4 @@ export default {
   component: MainPanel
 }
 
-export const Component = () => <MainPanel main="Компонент" secondary="Я самостоятельный компонент" gender="male"/>
+export const Component: React.FC = () => <MainPanel main="Компонент" secondary="Я самостоятельный компонент" gender="male"/>

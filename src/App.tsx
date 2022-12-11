@@ -2,9 +2,8 @@ import React from 'react'
 import Pokecard from './Pokecard/Pokecard'
 import Logo from './resources/pikachu.png'
 import moves from './moves.json'
-import styles from './App.module.css'
 
-export const App = () => {
+export const App: React.FC = () => {
   const ability = {
     name: 'Статика',
     description: 'С вероятность 30% может парализовать цель'
