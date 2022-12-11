@@ -2,10 +2,14 @@
   "name": "pokedom",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://fant1k34.github.io/Pokemon",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "eslint": "^8.0.1",
+    "gh-pages": "^4.0.0",
+    "node": "^19.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -20,7 +24,9 @@
     "eject": "react-scripts eject",
     "build-ts": "tsc --jsx react-jsx -p . && node ./build/index.js",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy": "yarn build && gh-pages -d build",
+    "fix": "npx eslint .storybook/** src/**"
   },
   "eslintConfig": {
     "extends": [
@@ -62,7 +68,17 @@
     "@storybook/react": "^6.5.13",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
-  }
+  },
+  "description": "Pokedom project for A?.Frontend Conf",
+  "main": "index.js",
+  "repository": "https://github.com/Fant1k34/Pokemon.git",
+  "author": "Nikita Dukin <nikirov14@mail.ru>",
+  "license": "MIT"
 }

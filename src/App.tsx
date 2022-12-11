@@ -1,15 +1,14 @@
-import React from 'react';
-import Pokecard from "./Pokecard/Pokecard";
-import Logo from "./resources/pikachu.png";
-import moves from "./moves.json";
-import { MainPanel } from "./MainPanel/MainPanel";
-import {SecondaryPanel} from "./SecondaryPanel/SecondaryPanel";
-import styles from "./App.module.css";
+import React from 'react'
+import Pokecard from './Pokecard/Pokecard'
+import Logo from './resources/pikachu.png'
+import moves from './moves.json'
+import styles from './App.module.css'
 
 export const App = () => {
-    return (
-        <>
-            <MainPanel main="Интересно" secondary="А я вообще существую?" gender="female" className={styles.Container}/>
-        </>
-    );
-};
+  const ability = {
+    name: 'Статика',
+    description: 'С вероятность 30% может парализовать цель'
+  }
+
+  return <Pokecard photo={Logo} ability={ability} gender="male" view="usual" name="Пикачу" moves={moves} power={110}/>
+}
