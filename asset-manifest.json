@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Pokemon/static/css/main.43b6de50.css",
-    "main.js": "/Pokemon/static/js/main.9392b74e.js",
+    "main.css": "/Pokemon/static/css/main.976d1d3c.css",
+    "main.js": "/Pokemon/static/js/main.b7f175f8.js",
     "static/media/Undertale.ttf": "/Pokemon/static/media/Undertale.4ca303e5e47dd0610bd6.ttf",
     "index.html": "/Pokemon/index.html",
-    "main.43b6de50.css.map": "/Pokemon/static/css/main.43b6de50.css.map",
-    "main.9392b74e.js.map": "/Pokemon/static/js/main.9392b74e.js.map"
+    "main.976d1d3c.css.map": "/Pokemon/static/css/main.976d1d3c.css.map",
+    "main.b7f175f8.js.map": "/Pokemon/static/js/main.b7f175f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.43b6de50.css",
-    "static/js/main.9392b74e.js"
+    "static/css/main.976d1d3c.css",
+    "static/js/main.b7f175f8.js"
   ]
 }
